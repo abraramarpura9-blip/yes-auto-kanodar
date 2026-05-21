@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Toyota Fortuner | YES AUTO KANODAR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#7b7979",
+                        "on-secondary-fixed-variant": "#92001d",
+                        "surface-variant": "#333535",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "on-primary-fixed": "#1c1b1b",
+                        "primary-fixed": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "surface-container": "#1e2020",
+                        "surface-container-highest": "#333535",
+                        "surface-container-lowest": "#0c0f0f",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary-container": "#090a0b",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "on-primary-fixed-variant": "#474646",
+                        "surface-dim": "#121414",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-container": "#79797a",
+                        "primary": "#c9c6c5",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "secondary-fixed": "#ffdad8",
+                        "tertiary-fixed": "#e3e2e2",
+                        "on-background": "#e2e2e2",
+                        "on-secondary": "#680011",
+                        "inverse-on-surface": "#2f3131",
+                        "on-error": "#690005",
+                        "outline": "#8e9192",
+                        "primary-container": "#0a0a0a",
+                        "background": "#121414",
+                        "secondary": "#ffb3b1",
+                        "surface-bright": "#37393a",
+                        "on-primary": "#313030",
+                        "inverse-primary": "#5f5e5e",
+                        "on-secondary-fixed": "#410007",
+                        "outline-variant": "#444748",
+                        "on-surface": "#e2e2e2",
+                        "surface-container-high": "#282a2b",
+                        "inverse-surface": "#e2e2e2",
+                        "on-tertiary": "#2f3131",
+                        "error-container": "#93000a",
+                        "secondary-container": "#d6042f",
+                        "surface": "#121414",
+                        "surface-tint": "#c9c6c5",
+                        "on-secondary-container": "#ffe7e5",
+                        "on-surface-variant": "#c4c7c7",
+                        "error": "#ffb4ab",
+                        "tertiary": "#c6c6c6",
+                        "surface-container-low": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "container-max-width": "1440px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Montserrat"],
+                        "label-bold": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Montserrat"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .metallic-glint {
+            position: relative;
+            overflow: hidden;
+        }
+        .metallic-glint::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.1) 50%, transparent 55%);
+            transform: rotate(45deg);
+            transition: all 0.5s;
+            pointer-events: none;
+        }
+        .metallic-glint:hover::after {
+            left: 100%;
+            top: 100%;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-white">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-[100] bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max-width mx-auto">
+<a class="font-display-lg text-headline-lg font-extrabold text-on-surface tracking-tighter" href="#">YES AUTO KANODAR</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-bold text-label-bold text-secondary border-b-2 border-secondary pb-1" href="#">Buy</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-on-surface transition-colors" href="#">Sell</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-on-surface transition-colors" href="#">Finance</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-on-surface transition-colors" href="#">About</a>
+</nav>
+<button class="px-6 py-2 bg-secondary-container text-white font-label-bold text-label-bold metallic-glint active:scale-95 duration-200">
+                Contact Now
+            </button>
+</div>
+</header>
+<main class="pt-24 pb-20 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 mb-8 text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Inventory</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface">Toyota Fortuner 2.8L 4x4</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Media & Specs -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Gallery Section -->
+<section>
+<div class="relative aspect-[16/9] w-full bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A front three-quarter studio portrait of a pristine, white Toyota Fortuner SUV parked in a professional, dimly lit luxury showroom with cinematic lighting highlights on its metallic body. The atmosphere is sophisticated and elite, using a high-contrast dark mode aesthetic with performance red accents reflecting subtly on the floor. The vehicle looks powerful, precise, and meticulously detailed." id="main-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFjC8zZ_3KAzk3wH4KmY81SrMQUJKgEZd9UBl9NRJYqRXlqimqAn45TO4IYkjFU-aW9Vh4V5c8MTUvngx248fbhdMHJooCvTkBtnoxEjffRI9UYIOKw8B4942jrrnCpahzej_vxv8W7jv3p3EpvHHc7OQprvwAudM7W304_vBD5Kvgw039uRDj8kuO0O_fzlJ48lWDBGGEah40rDQv9BARCeETNfqpzSilcUC7UbjPF2-nQ54hpc_8NEe9M6PwN7uBzoKMmuMFbz4"/>
+<div class="absolute top-4 left-4 bg-secondary-container px-3 py-1 text-white font-label-bold text-label-bold">PRE-OWNED</div>
+</div>
+<div class="mt-4 flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+<button class="shrink-0 w-32 aspect-video bg-surface-container border border-secondary" onclick="changeImage(this.children[0].src)">
+<img class="w-full h-full object-cover" data-alt="Close up image of the front grille and LED headlights of a modern luxury Toyota SUV with metallic silver finish in a dark showroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBog9D-Po54dEJGjjBW5COVhOab_Y5gmmyDTicD-N8wOZbU7QA1BXHCK5GGrlTessd3tFTmEMZV4aWO_PenwLg4TUDgl9B5ylWBOL7GkrgZ7QdgHS-aayybJNltjAfPgpgC0HY04pYBD4Mf01UOuDyP4v6DeMDPhChawIa-lblyGooWMM1KX21KsLaRTHKLrZhsSpkR6Q3ESdSdw8IhEW6bX9xkfkb4PaxUrYrIc8cbsA3dThVhIz0xkUl00lQtIRjJnZ6j63AQrIc"/>
+</button>
+<button class="shrink-0 w-32 aspect-video bg-surface-container border border-outline-variant hover:border-primary transition-all" onclick="changeImage(this.children[0].src)">
+<img class="w-full h-full object-cover" data-alt="Interior luxury cabin of a Toyota Fortuner featuring leather upholstery and a premium dashboard console in a high-end automotive environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWwTamg9e1Z_cDE_WfwOXwBzH2R775bRdoDeWe6wchZVRv2xlxOx6iTn2E0N8KdsKLZEznKwFSKYghG3Jo1grsuwbcDaHUkRGORTZaQaNR0kfQungE54S01TkDCVFlgpkWs_GBRQHnchBxf9laXQYMiTtze47H-Tvgq9uUoDBy60bDzAf2yh1G_xV6OHnuDoQaB3CUHp2BMvQ3bBdZ7vQDzfgY-Ltym0qV3NEg_x_c96dVKNiRaaD7NIks678GV7s9ymZF6_xwmic"/>
+</button>
+<button class="shrink-0 w-32 aspect-video bg-surface-container border border-outline-variant hover:border-primary transition-all" onclick="changeImage(this.children[0].src)">
+<img class="w-full h-full object-cover" data-alt="Side profile view of a Toyota Fortuner showing alloy wheels and rugged silhouette against a dark, dramatic background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe16gWsqW564rz_BW0_zampjPn9eXWK6vRWY1JY9_n3DmmzCdKNFdG1AMDjk4_mbBsL2KtYjPybcULlKSWsd6yVesSe_XWkRJtAZrtofUVxJZJa17JlxBBFvG5RkwqL3qqBtwJa6OSZE7rsg-euygPtXBoTqjO2oipapA6IrjHsHX34P1T6Eh3HxjOo9Yh-JRvq-XIAOF3XdeqUpPpVdIPI_9JDPceSBUWSP37AJ6QTNQjX-caPUCfy0Hf2sw_5Zcmvt_LipwDXHI"/>
+</button>
+<button class="shrink-0 w-32 aspect-video bg-surface-container border border-outline-variant hover:border-primary transition-all" onclick="changeImage(this.children[0].src)">
+<img class="w-full h-full object-cover" data-alt="Close up view of the engine bay of a Toyota Fortuner 2.8L diesel engine, showing clean components and technical precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdUl_4W2B1LPwcQNh6FZH9qVruG4QzCBWvl1jHl_1BZznVaAqtwKXEX3ROTFhkIYdoTam_saOpTwv1NALavzKzkPqnESjrPhk2PIH_YSQNzoHfGqRA2hxV-VsyM9QpxHd-rwJdblMNeDORrhm69IoFGIcD5W84q-gSuYD48P3k4xsSWmyJ0JoaA5l90YFN8r1XVLke6av7ihbHreeKWkAv7YWUuzjXmMgAsOipvoTjdxju_raQQniRdB9kyZBg0A80RTms5dlKDdg"/>
+</button>
+</div>
+</section>
+<!-- Vehicle Identity -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-outline-variant/30 pb-8">
+<div>
+<h1 class="font-display-lg text-headline-lg md:text-display-lg text-on-surface leading-tight">Toyota Fortuner 2.8L</h1>
+<p class="text-on-surface-variant font-body-lg text-body-lg">Sigma 4 | Automatic | 2022 | 24,000 KM</p>
+</div>
+<div class="text-right">
+<span class="block text-secondary-container font-display-lg text-headline-lg font-extrabold tracking-tight">₹ 34,50,000</span>
+<span class="text-on-surface-variant font-label-bold text-label-bold">*Ex-Showroom Price</span>
+</div>
+</div>
+<!-- Trust Badges -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="p-6 bg-surface-container-low border border-outline-variant/30 flex flex-col items-center text-center group hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary-container text-3xl mb-3">person</span>
+<span class="font-label-bold text-label-bold text-on-surface uppercase tracking-widest">1st Owner</span>
+</div>
+<div class="p-6 bg-surface-container-low border border-outline-variant/30 flex flex-col items-center text-center group hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary-container text-3xl mb-3">verified_user</span>
+<span class="font-label-bold text-label-bold text-on-surface uppercase tracking-widest">Certified</span>
+</div>
+<div class="p-6 bg-surface-container-low border border-outline-variant/30 flex flex-col items-center text-center group hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary-container text-3xl mb-3">security</span>
+<span class="font-label-bold text-label-bold text-on-surface uppercase tracking-widest">Insurance Valid</span>
+</div>
+<div class="p-6 bg-surface-container-low border border-outline-variant/30 flex flex-col items-center text-center group hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary-container text-3xl mb-3">account_balance</span>
+<span class="font-label-bold text-label-bold text-on-surface uppercase tracking-widest">Finance Ready</span>
+</div>
+</section>
+<!-- Technical Specifications -->
+<section class="space-y-6">
+<h2 class="font-headline-md text-headline-md text-on-surface border-l-4 border-secondary-container pl-4">Technical Specifications</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex justify-between p-4 bg-surface-container-lowest border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Engine Displacement</span>
+<span class="font-label-bold text-on-surface">2755 cc</span>
+</div>
+<div class="flex justify-between p-4 bg-surface-container-lowest border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Max Power</span>
+<span class="font-label-bold text-on-surface">201 bhp @ 3000 rpm</span>
+</div>
+<div class="flex justify-between p-4 bg-surface-container-lowest border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Max Torque</span>
+<span class="font-label-bold text-on-surface">500 Nm @ 1600 rpm</span>
+</div>
+<div class="flex justify-between p-4 bg-surface-container-lowest border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Mileage</span>
+<span class="font-label-bold text-on-surface">14.4 kmpl (ARAI)</span>
+</div>
+<div class="flex justify-between p-4 bg-surface-container-lowest border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Transmission</span>
+<span class="font-label-bold text-on-surface">6-Speed Automatic</span>
+</div>
+<div class="flex justify-between p-4 bg-surface-container-lowest border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Fuel Type</span>
+<span class="font-label-bold text-on-surface">Diesel</span>
+</div>
+</div>
+</section>
+<!-- EMI Calculator Widget -->
+<section class="p-8 bg-surface-container-high/50 backdrop-blur-md border border-outline-variant/30 rounded-xl">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8">EMI Calculator</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+<label class="text-on-surface font-label-bold">Down Payment</label>
+<span class="text-secondary font-headline-md" id="dp-value">₹ 7,00,000</span>
+</div>
+<input class="w-full h-1 bg-outline-variant rounded-lg appearance-none cursor-pointer accent-secondary-container" max="3000000" min="300000" oninput="updateEMI()" step="50000" type="range" value="700000"/>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+<label class="text-on-surface font-label-bold">Tenure (Years)</label>
+<span class="text-secondary font-headline-md" id="tenure-value">5 Years</span>
+</div>
+<input class="w-full h-1 bg-outline-variant rounded-lg appearance-none cursor-pointer accent-secondary-container" max="7" min="1" oninput="updateEMI()" step="1" type="range" value="5"/>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center bg-surface-container-lowest p-8 border border-secondary/20 relative overflow-hidden">
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle, #ffb3b1 1px, transparent 1px); background-size: 20px 20px;"></div>
+<span class="text-on-surface-variant font-label-bold uppercase tracking-widest mb-2">Estimated Monthly EMI</span>
+<span class="text-secondary-container font-display-lg text-[48px] font-extrabold" id="emi-result">₹ 58,450</span>
+<span class="text-on-surface-variant font-label-sm mt-4 text-center">Interest rate assumed at 9.5% per annum. T&amp;C Apply.</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sticky Inquiry -->
+<aside class="lg:col-span-4 sticky top-28">
+<div class="bg-surface-container-highest p-8 border border-outline-variant/30 shadow-2xl space-y-8">
+<div class="space-y-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Book a Test Drive</h3>
+<p class="text-on-surface-variant text-body-md">Fill in your details and our relationship manager will contact you.</p>
+</div>
+<form class="space-y-6">
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline focus:border-secondary-container focus:ring-0 px-0 py-3 text-on-surface transition-all" placeholder=" " type="text"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label-bold pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-secondary-container peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs">Full Name</label>
+</div>
+<div class="relative group">
+<input class="peer w-full bg-transparent border-0 border-b border-outline focus:border-secondary-container focus:ring-0 px-0 py-3 text-on-surface transition-all" placeholder=" " type="tel"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label-bold pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-secondary-container peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs">Phone Number</label>
+</div>
+<button class="w-full bg-secondary-container py-4 text-white font-label-bold text-label-bold metallic-glint" type="submit">
+                            BOOK TEST DRIVE
+                        </button>
+</form>
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col gap-4">
+<a class="flex items-center justify-center gap-3 w-full border border-outline hover:border-secondary transition-colors py-3 font-label-bold" href="https://wa.me/910000000000">
+<span class="material-symbols-outlined">chat</span>
+                            WHATSAPP INQUIRY
+                        </a>
+<a class="flex items-center justify-center gap-3 w-full border border-outline hover:border-secondary transition-colors py-3 font-label-bold" href="tel:+910000000000">
+<span class="material-symbols-outlined">call</span>
+                            CALL +91 99000 88000
+                        </a>
+</div>
+<!-- Trust Indicators -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary-container" data-weight="fill">verified</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-label-bold text-label-sm">YES AUTO VERIFIED</span>
+<span class="text-on-surface-variant text-[10px]">160 Point Inspection Completed</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="font-display-lg text-headline-md text-on-surface block mb-4">YES AUTO KANODAR</span>
+<p class="text-on-surface-variant font-body-md text-body-md">Premium pre-owned automobile showroom delivering luxury and trust since 2024.</p>
+</div>
+<div>
+<h4 class="font-headline-md text-label-bold text-on-surface mb-6 uppercase tracking-widest">Inventory</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Cars</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Bikes</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-label-bold text-on-surface mb-6 uppercase tracking-widest">Company</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-label-bold text-on-surface mb-6 uppercase tracking-widest">Connect</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Contact</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Instagram</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Facebook</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-16 px-margin-desktop max-w-container-max-width mx-auto pt-8 border-t border-outline-variant/30 flex justify-between items-center">
+<p class="text-on-surface-variant font-label-sm text-label-sm">© 2024 YES AUTO KANODAR. Driven By Trust.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">directions_car</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">verified</span>
+</div>
+</div>
+</footer>
+<!-- Mobile Navigation -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-surface-container-high/90 backdrop-blur-lg border-t border-outline-variant shadow-lg flex justify-around items-center h-16 pb-safe">
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-weight="fill">directions_car</span>
+<span class="font-label-sm text-label-sm">Inventory</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:scale-110 transition-transform">
+<span class="material-symbols-outlined">sell</span>
+<span class="font-label-sm text-label-sm">Sell</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:scale-110 transition-transform">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-sm text-label-sm">Finance</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:scale-110 transition-transform">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-label-sm text-label-sm">Support</span>
+</button>
+</nav>
+<script>
+        function changeImage(src) {
+            const mainImg = document.getElementById('main-image');
+            mainImg.style.opacity = '0';
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+            }, 200);
+        }
+
+        function updateEMI() {
+            const inputs = document.querySelectorAll('input[type="range"]');
+            const dp = parseInt(inputs[0].value);
+            const years = parseInt(inputs[1].value);
+            const totalAmount = 3450000;
+            const loanAmount = totalAmount - dp;
+            const annualRate = 9.5;
+            const monthlyRate = annualRate / (12 * 100);
+            const nMonths = years * 12;
+
+            document.getElementById('dp-value').innerText = '₹ ' + dp.toLocaleString('en-IN');
+            document.getElementById('tenure-value').innerText = years + (years === 1 ? ' Year' : ' Years');
+
+            const emi = (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, nMonths)) / (Math.pow(1 + monthlyRate, nMonths) - 1);
+            document.getElementById('emi-result').innerText = '₹ ' + Math.round(emi).toLocaleString('en-IN');
+        }
+
+        // Initialize EMI
+        updateEMI();
+    </script>
+</body></html>

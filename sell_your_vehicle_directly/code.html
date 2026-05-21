@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sell Your Vehicle | YES AUTO KANODAR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#7b7979",
+                    "on-secondary-fixed-variant": "#92001d",
+                    "surface-variant": "#333535",
+                    "secondary-fixed-dim": "#ffb3b1",
+                    "on-primary-fixed": "#1c1b1b",
+                    "primary-fixed": "#e5e2e1",
+                    "on-error-container": "#ffdad6",
+                    "surface-container": "#1e2020",
+                    "surface-container-highest": "#333535",
+                    "surface-container-lowest": "#0c0f0f",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "tertiary-container": "#090a0b",
+                    "primary-fixed-dim": "#c9c6c5",
+                    "on-primary-fixed-variant": "#474646",
+                    "surface-dim": "#121414",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "on-tertiary-container": "#79797a",
+                    "primary": "#c9c6c5",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "secondary-fixed": "#ffdad8",
+                    "tertiary-fixed": "#e3e2e2",
+                    "on-background": "#e2e2e2",
+                    "on-secondary": "#680011",
+                    "inverse-on-surface": "#2f3131",
+                    "on-error": "#690005",
+                    "outline": "#8e9192",
+                    "primary-container": "#0a0a0a",
+                    "background": "#121414",
+                    "secondary": "#ffb3b1",
+                    "surface-bright": "#37393a",
+                    "on-primary": "#313030",
+                    "inverse-primary": "#5f5e5e",
+                    "on-secondary-fixed": "#410007",
+                    "outline-variant": "#444748",
+                    "on-surface": "#e2e2e2",
+                    "surface-container-high": "#282a2b",
+                    "inverse-surface": "#e2e2e2",
+                    "on-tertiary": "#2f3131",
+                    "error-container": "#93000a",
+                    "secondary-container": "#d6042f",
+                    "surface": "#121414",
+                    "surface-tint": "#c9c6c5",
+                    "on-secondary-container": "#ffe7e5",
+                    "on-surface-variant": "#c4c7c7",
+                    "error": "#ffb4ab",
+                    "tertiary": "#c6c6c6",
+                    "surface-container-low": "#1a1c1c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "container-max-width": "1440px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Montserrat"],
+                    "label-bold": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Montserrat"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .metallic-glint:hover {
+            background: linear-gradient(110deg, #d6042f 45%, #ff4d6d 50%, #d6042f 55%);
+            background-size: 200% 100%;
+            animation: glint 0.8s linear forwards;
+        }
+        @keyframes glint {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        .form-focus-red:focus {
+            outline: none;
+            border-bottom: 2px solid #d6042f !important;
+        }
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px #121414 inset !important;
+            -webkit-text-fill-color: #e2e2e2 !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-[100] bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="font-display-lg text-headline-lg font-extrabold text-on-surface tracking-tighter">YES AUTO KANODAR</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-on-surface transition-colors" href="#">Buy</a>
+<a class="font-label-bold text-label-bold text-secondary border-b-2 border-secondary pb-1" href="#">Sell</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-on-surface transition-colors" href="#">Finance</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-on-surface transition-colors" href="#">About</a>
+<button class="bg-secondary-container text-white px-6 py-2 font-label-bold text-label-bold rounded-lg hover:bg-secondary-container/90 active:scale-95 duration-200 transition-all">Contact Now</button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<!-- Hero Header -->
+<header class="mb-16 text-center max-w-3xl mx-auto">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Turn Your Asset into <span class="text-secondary-container">Immediate Capital</span>.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Experience a transparent, mechanical precision selling process. Get the best market value for your luxury or utility vehicle with YES AUTO KANODAR's expert verification.</p>
+</header>
+<!-- Trust Badges Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter mb-20">
+<div class="flex items-center gap-4 p-6 bg-surface-container-high rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary-container text-3xl">verified_user</span>
+<div>
+<p class="font-label-bold text-label-bold text-on-surface">Secure Documentation</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Encrypted &amp; Safe</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-6 bg-surface-container-high rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary-container text-3xl">speed</span>
+<div>
+<p class="font-label-bold text-label-bold text-on-surface">Fast Verification</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Within 24 Hours</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-6 bg-surface-container-high rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary-container text-3xl">account_balance_wallet</span>
+<div>
+<p class="font-label-bold text-label-bold text-on-surface">Quick Payment</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Instant Transfer</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-6 bg-surface-container-high rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary-container text-3xl">assignment_return</span>
+<div>
+<p class="font-label-bold text-label-bold text-on-surface">RC Transfer Support</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">End-to-end Assistance</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Sell Form Section -->
+<section class="lg:col-span-8">
+<div class="bg-surface-container-low rounded-2xl p-8 md:p-12 border border-outline-variant/30 shadow-2xl">
+<form class="space-y-12" id="sellForm">
+<!-- Step 1: Owner Info -->
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="bg-secondary-container text-white w-8 h-8 rounded-full flex items-center justify-center font-label-bold">1</span>
+<h3 class="font-headline-md text-headline-md">Owner Information</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">Owner Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all" placeholder="Full Legal Name" type="text"/>
+</div>
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">Mobile Number</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all" placeholder="+91 00000 00000" type="tel"/>
+</div>
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all" placeholder="owner@example.com" type="email"/>
+</div>
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">City</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all" placeholder="Current Location" type="text"/>
+</div>
+</div>
+</div>
+<!-- Step 2: Vehicle Info -->
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="bg-secondary-container text-white w-8 h-8 rounded-full flex items-center justify-center font-label-bold">2</span>
+<h3 class="font-headline-md text-headline-md">Vehicle Details</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">Brand</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all appearance-none cursor-pointer">
+<option disabled="" selected="" value="">Select Brand</option>
+<option value="audi">Audi</option>
+<option value="bmw">BMW</option>
+<option value="mercedes">Mercedes-Benz</option>
+<option value="toyota">Toyota</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">Model</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all" placeholder="e.g. A6 Matrix" type="text"/>
+</div>
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">Year</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all" placeholder="2024" type="number"/>
+</div>
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">KMs Driven</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all" placeholder="12,000" type="number"/>
+</div>
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">Fuel Type</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 form-focus-red transition-all appearance-none cursor-pointer">
+<option value="petrol">Petrol</option>
+<option value="diesel">Diesel</option>
+<option value="ev">Electric</option>
+<option value="hybrid">Hybrid</option>
+</select>
+</div>
+<div class="relative">
+<label class="block font-label-bold text-label-bold text-on-surface-variant mb-2">Expected Price (₹)</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant text-on-surface py-3 px-0 font-label-bold text-secondary-container form-focus-red transition-all" placeholder="Your Valuation" type="text"/>
+</div>
+</div>
+</div>
+<!-- Step 3: Documents Upload -->
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="bg-secondary-container text-white w-8 h-8 rounded-full flex items-center justify-center font-label-bold">3</span>
+<h3 class="font-headline-md text-headline-md">Upload Documents</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="border-2 border-dashed border-outline-variant hover:border-secondary-container/50 transition-colors rounded-xl p-6 flex flex-col items-center justify-center text-center group cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-3 text-on-surface-variant group-hover:text-secondary-container transition-colors">camera_alt</span>
+<p class="font-label-bold text-label-bold">Vehicle Photos</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Min. 5 clear shots</p>
+</div>
+<div class="border-2 border-dashed border-outline-variant hover:border-secondary-container/50 transition-colors rounded-xl p-6 flex flex-col items-center justify-center text-center group cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-3 text-on-surface-variant group-hover:text-secondary-container transition-colors">description</span>
+<p class="font-label-bold text-label-bold">RC Book</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Front &amp; Back Page</p>
+</div>
+<div class="border-2 border-dashed border-outline-variant hover:border-secondary-container/50 transition-colors rounded-xl p-6 flex flex-col items-center justify-center text-center group cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-3 text-on-surface-variant group-hover:text-secondary-container transition-colors">policy</span>
+<p class="font-label-bold text-label-bold">Insurance</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Valid Policy Copy</p>
+</div>
+</div>
+</div>
+<button class="w-full bg-secondary-container text-white py-5 font-headline-md text-headline-md rounded-lg uppercase tracking-widest metallic-glint transition-all shadow-lg shadow-secondary-container/20" type="submit">
+                            Get Instant Valuation
+                        </button>
+</form>
+</div>
+</section>
+<!-- Sidebar Info/Image Section -->
+<aside class="lg:col-span-4 space-y-8">
+<div class="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover grayscale-[20%] brightness-75" data-alt="A side-profile high-resolution cinematic shot of a sleek black premium luxury sedan parked in a high-end minimalist concrete showroom. The lighting is cold, surgical white, reflecting off the polished metallic surface to emphasize the car's aggressive aerodynamic lines. Deep blacks and performance red accents dominate the scene, creating a sense of elite prestige and uncompromising engineering. The atmosphere is quiet, modern, and high-performance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgmliGl4kHHbgV9Vyq9s83fm4T33Kkihvi1X5NSRZZYbNEeriwhMoh_2JuEdtekHDynuEhjW4SX5rAOH8cL8YWC78My-FFFcHLae5syHJr1Wwgr_Ng9dYA6momhMEROXAyKcn0uLO28UfgsJ8blL2wQc0U8GphkMuTNq3TNyUif-pOywqHvEd6Z8B7sTJdgH8YSEK2Gep5_638-LwY6zjotQXYZXhoxesASPvg6APd2C6LN_aXYTcSDa-ZyJ75Ucd1gkRiIdI8Il0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent flex flex-col justify-end p-8">
+<div class="bg-secondary-container/10 backdrop-blur-md border border-secondary-container/20 p-6 rounded-xl">
+<h4 class="font-headline-md text-headline-md text-white mb-2">Expert Consultation</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Our team of master evaluators ensures you receive the most competitive price for your heritage on wheels.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-2xl border border-outline-variant/20">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-6">Why Choose Us?</h4>
+<ul class="space-y-4">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Fair market value based on precise technical analysis.</span>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Zero hidden fees or service charges for selling.</span>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Pan-India buyer network for quick turnaround.</span>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display-lg text-headline-md text-on-surface mb-4">YES AUTO KANODAR</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Driven By Trust. Delivering Excellence In Every Gear.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-headline-md text-headline-md text-primary mb-2">Quick Links</h5>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Cars</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Bikes</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Sell Your Vehicle</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-headline-md text-headline-md text-primary mb-2">Legal</h5>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-headline-md text-headline-md text-primary mb-2">Support</h5>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">National Highway 41, Kanodar, Gujarat</p>
+</div>
+</div>
+<div class="mt-16 text-center border-t border-outline-variant/30 pt-8">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 YES AUTO KANODAR. Driven By Trust.</p>
+</div>
+</footer>
+<!-- Mobile Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-surface-container-high/90 backdrop-blur-lg border-t border-outline-variant shadow-lg flex justify-around items-center h-16 pb-safe">
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:bg-surface-variant active:scale-110 transition-transform px-4">
+<span class="material-symbols-outlined">directions_car</span>
+<span class="font-label-sm text-label-sm">Inventory</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary font-bold active:bg-surface-variant active:scale-110 transition-transform px-4">
+<span class="material-symbols-outlined">sell</span>
+<span class="font-label-sm text-label-sm">Sell</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:bg-surface-variant active:scale-110 transition-transform px-4">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-sm text-label-sm">Finance</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:bg-surface-variant active:scale-110 transition-transform px-4">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-label-sm text-label-sm">Support</span>
+</button>
+</nav>
+<!-- Floating WhatsApp Integration -->
+<a class="fixed bottom-24 right-8 z-[110] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform active:scale-95 duration-200 group flex items-center gap-3" href="https://wa.me/910000000000" target="_blank">
+<span class="hidden group-hover:inline font-label-bold">Chat with Expert</span>
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.464c1.589.941 3.275 1.438 4.991 1.438h.005c5.344 0 9.693-4.349 9.695-9.694.001-2.59-1.011-5.025-2.85-6.864s-4.275-2.85-6.865-2.851c-5.344 0-9.695 4.349-9.697 9.694-.001 1.831.523 3.616 1.516 5.178l-1.011 3.693 3.716-.975zm11.367-7.391c-.246-.123-1.453-.717-1.678-.799-.225-.082-.388-.123-.55.123-.162.246-.633.799-.775.961-.143.162-.285.183-.531.061-.246-.123-1.039-.383-1.979-1.222-.731-.652-1.224-1.458-1.367-1.701-.143-.246-.015-.378.107-.501.111-.11.246-.285.369-.429.123-.143.164-.246.246-.41.082-.164.041-.307-.021-.43-.062-.123-.55-1.329-.752-1.815-.198-.475-.399-.41-.55-.418-.142-.007-.306-.007-.471-.007s-.43.061-.654.285c-.225.246-.859.84-0.859 2.049s.879 2.376.999 2.541c.121.164 1.733 2.645 4.197 3.711.586.254 1.044.405 1.401.518.59.187 1.127.161 1.551.098.473-.071 1.452-.593 1.656-1.165.204-.572.204-1.063.143-1.165-.062-.102-.225-.164-.471-.287z"></path></svg>
+</a>
+<script>
+        // Form visual feedback
+        document.getElementById('sellForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Transmitting Data...';
+            btn.classList.add('opacity-80', 'scale-95');
+            
+            setTimeout(() => {
+                alert('Success! Our valuation engine is analyzing your vehicle. An expert will contact you shortly.');
+                btn.innerText = originalText;
+                btn.classList.remove('opacity-80', 'scale-95');
+                e.target.reset();
+            }, 1500);
+        });
+
+        // Hover effect for document boxes
+        const boxes = document.querySelectorAll('.border-dashed');
+        boxes.forEach(box => {
+            box.addEventListener('mouseenter', () => {
+                box.classList.add('bg-secondary-container/5');
+            });
+            box.addEventListener('mouseleave', () => {
+                box.classList.remove('bg-secondary-container/5');
+            });
+        });
+    </script>
+</body></html>
